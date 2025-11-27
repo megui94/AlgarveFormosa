@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Serviços na Ria Formosa</h2>
+      <p>
+        Partidas de Olhão com serviço de táxi marítimo simples (ida e volta até à ilha escolhida)
+        e boat tours organizados para quem quer conhecer melhor a Ria Formosa.
+      </p>
+    </header>
+
+    <!-- CARDS RESUMO -->
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Táxi marítimo Olhão & ilhas</h3>
+        <p>
+          Serviço simples de transporte entre Olhão e a ilha que escolheres, com ida e volta
+          combinadas contigo.
+        </p>
+        <ul>
+          <li>Olhão ⇄ Armona, Culatra, Farol, Deserta</li>
+          <li>Ida e regresso marcados à hora combinada</li>
+          <li>Reserva por mensagem ou telefonema</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Passeios pelas ilhas</h3>
+        <p>
+          Passeios relaxados com paragens em várias ilhas, para conhecer as praias,
+          aldeias piscatórias e trilhos junto ao mar.
+        </p>
+        <ul>
+          <li>Visita a várias ilhas numa só saída</li>
+          <li>Tempo livre para explorar</li>
+          <li>Explicações simples sobre a Ria Formosa</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Pôr-do-sol na Ria Formosa</h3>
+        <p>
+          Passeio de fim de tarde pelos canais da ria, com vista para o sol a
+          descer atrás das ilhas e de Olhão.
+        </p>
+        <ul>
+          <li>Ambiente calmo e romântico</li>
+          <li>Momento ideal para fotografias</li>
+          <li>Cenário perfeito sobre a cidade e as ilhas</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DETALHE: TÁXI MARÍTIMO -->
+<section class="section section-soft">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-media">
+        <!-- troca o ficheiro pela tua foto real -->
+        <img src="{{ url_for('static', filename='imagens/taxi-maritimo.jpg') }}"
+             alt="Táxi marítimo Olhão - ilhas" />
+      </div>
+      <div class="service-detail-text">
+        <span class="service-chip">Serviço • Táxi marítimo</span>
+        <h2>Táxi marítimo: ida e volta entre Olhão e as ilhas</h2>
+        <p>
+          O nosso táxi marítimo é um serviço direto de transporte: levamos-te de Olhão
+          até à ilha destino e voltamos a buscar-te à hora combinada. Simples, sem
+          roteiro turístico e sem paragens extra.
+        </p>
+        <p>
+          Indicado para quem já sabe o que quer fazer na ilha — ir à praia, almoçar,
+          passear — e só precisa de uma ligação cómoda e segura.
+        </p>
+
+        <ul>
+          <li>Olhão ⇄ Armona, Culatra, Farol, Deserta ou outra ilha combinada</li>
+          <li>Ida e regresso marcados contigo antecipadamente</li>
+          <li>Sem paragens de tour: é um transporte direto até à ilha</li>
+          <li>Barco com skipper local e coletes disponíveis para todos</li>
+        </ul>
+
+        <p class="service-detail-note">
+          💬 Para marcar o táxi marítimo, entra em contacto por mensagem ou telefonema
+          e indica a data, ilha de destino, número de pessoas e horário pretendido.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DETALHE: BOAT TOURS -->
+<section class="section">
+  <div class="container">
+    <div class="service-detail-grid service-detail-reverse">
+      <div class="service-detail-media">
+        <!-- troca o ficheiro pela tua foto real -->
+        <img src="{{ url_for('static', filename='imagens/boat-tour.jpg') }}"
+             alt="Boat tour na Ria Formosa" />
+      </div>
+      <div class="service-detail-text">
+        <span class="service-chip">Serviço • Boat tours</span>
+        <h2>Boat Tours para descobrir a Ria Formosa com calma</h2>
+        <p>
+          Os boat tours são passeios de barco organizados, com roteiro pensado para
+          mostrar diferentes ilhas, canais e paisagens da Ria Formosa. Aqui o foco é
+          aproveitar o caminho, as paragens e o tempo a bordo.
+        </p>
+        <p>
+          Tens tempo para sair do barco, caminhar nas ilhas, tirar fotografias,
+          dar um mergulho e conhecer melhor a zona, sempre com explicações simples
+          sobre o que estás a ver.
+        </p>
+
+        <ul>
+          <li>Roteiros com várias ilhas na mesma saída (por exemplo Armona, Culatra e Farol)</li>
+          <li>Passagem por canais e zonas de mar mais calmo, ideais para apreciar a paisagem</li>
+          <li>Paragens com tempo livre para praia, fotografias e pequenos passeios a pé</li>
+          <li>Grupo reduzido, ambiente mais tranquilo e confortável a bordo</li>
+        </ul>
+
+        <p class="service-detail-note">
+          🌊 Adaptamos o tour à duração que queres, à hora do dia (manhã, tarde ou
+          pôr-do-sol) e ao tipo de experiência que procuras: mais fotografia, mais praia
+          ou apenas um passeio relaxado.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

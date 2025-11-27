@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- HERO -->
+  <section class="hero home-hero">
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-chip">Experiências na Ria Formosa • Olhão</span>
+        <h1 class="hero-title">
+          Táxi marítimo e boat tours pela <span>Ria Formosa com saída de Olhão</span>
+        </h1>
+        <p class="hero-subtitle">
+          Serviço de táxi marítimo entre Olhão e as ilhas da Ria Formosa, e passeios de barco
+          pensados para quem quer conhecer ilhas, praias e canais com calma, em grupos pequenos.
+        </p>
+
+        <div class="hero-actions">
+          <a href="{{ url_for('servicos') }}" class="btn btn-primary">Ver serviços</a>
+          <a href="{{ url_for('contactos') }}" class="btn btn-ghost">Pedir informações</a>
+        </div>
+
+        <div class="hero-bullets">
+          <span>✓ Partidas diárias de Olhão</span>
+          <span>✓ Táxi marítimo & passeios organizados</span>
+          <span>✓ Ilhas e praias paradisíacas</span>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <p class="hero-card-label">Próximas saídas</p>
+        <h2 class="hero-card-title">Ilhas da Ria Formosa</h2>
+        <p class="hero-card-text">
+          Passeios e transfers de barco com saída de Olhão, paragens nas ilhas mais emblemáticas e tempo
+          livre para aproveitar a praia e o mar transparente.
+        </p>
+
+        <ul class="hero-card-list">
+          <li>⛵ Saídas a partir de Olhão</li>
+          <li>🏝️ Armona, Culatra, Farol, Deserta e outras ilhas</li>
+          <li>👨‍✈️ Skipper local que conhece a Ria</li>
+        </ul>
+
+        <a href="{{ url_for('contactos') }}" class="btn btn-secondary full-width">Reservar por mensagem</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- NOVA SECÇÃO: TÁXI MARÍTIMO & BOAT TOURS -->
+  <section class="section">
+    <div class="container">
+      <header class="section-header">
+        <h2>Táxi marítimo & Boat Tours na Ria Formosa</h2>
+        <p>
+          Na Algarve Friends Tour podes escolher entre um serviço de táxi marítimo flexível, ideal para
+          ir e voltar das ilhas, e passeios de barco (boat tours) pensados para aproveitar o dia na Ria
+          Formosa, com várias paragens e tempo livre.
+        </p>
+      </header>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Táxi marítimo</h3>
+          <p>
+            Perfeito para quem quer apenas deslocar-se entre Olhão e as ilhas, com mais liberdade de
+            horários e sem depender de barcos de carreira cheios.
+          </p>
+          <ul>
+            <li>Olhão ⇄ Armona, Culatra, Farol, Deserta</li>
+            <li>Horários combinados connosco</li>
+            <li>Bom para quem já tem plano na ilha</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Boat tours (passeios de barco)</h3>
+          <p>
+            Passeios organizados pela Ria Formosa, com roteiro definido, explicações simples sobre a
+            zona, paragens em diferentes ilhas e tempo para praia, fotos e mergulhos.
+          </p>
+          <ul>
+            <li>Itinerário preparado para conhecer várias ilhas</li>
+            <li>Em grupos pequenos, ambiente mais calmo</li>
+            <li>Ideal para quem quer descobrir a Ria Formosa sem pressas</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇO EM DESTAQUE -->
+  <section id="servico-destaque" class="section section-feature">
+    <div class="container feature-card">
+      <div class="feature-image"></div>
+
+      <div class="feature-text">
+        <h2>Passeio às ilhas da Ria Formosa</h2>
+        <p>
+          Embarca em Olhão e descobre as ilhas da Ria Formosa: Armona, Culatra, Farol
+          e Deserta. Um passeio calmo pelos canais da ria, com tempo para caminhar
+          nas praias e aproveitar o mar transparente.
+        </p>
+
+        <ul>
+          <li>✨ Saídas em horários pensados para aproveitar a maré e o sol</li>
+          <li>🏝️ Paragens em ilhas escolhidas em conjunto contigo</li>
+          <li>🌊 Possibilidade de banho e tempo livre na praia</li>
+        </ul>
+
+        <a href="{{ url_for('servicos') }}" class="feature-link">
+          Ver opções deste passeio e reservar →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTEMUNHOS / COMENTÁRIOS DOS CLIENTES -->
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>O que dizem os nossos clientes</h2>
+      <p>
+        Alguns dos comentários de quem já veio connosco conhecer a Ria Formosa a partir de Olhão.
+      </p>
+    </header>
+
+    <div class="testimonial-grid">
+      <article class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          “Passeio super tranquilo, com paragens nas ilhas certas e tempo para aproveitar cada sítio.
+          Deu para tirar fotos incríveis e ainda mergulhar longe das multidões.”
+        </p>
+        <p class="testimonial-name">Ana & João</p>
+        <p class="testimonial-detail">Boat tour ilhas clássicas • Verão</p>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          “Foi a primeira vez em Olhão e não podíamos ter escolhido melhor. Explicações simples, boa
+          disposição e um pôr-do-sol que valeu totalmente a pena.”
+        </p>
+        <p class="testimonial-name">Marta, Lisboa</p>
+        <p class="testimonial-detail">Passeio ao pôr-do-sol</p>
+      </article>
+
+      <article class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          “Queríamos algo calmo com as crianças e correu tudo lindamente. O skipper ajustou o passeio ao
+          nosso ritmo e sentimo-nos sempre em segurança.”
+        </p>
+        <p class="testimonial-name">Família Rodrigues</p>
+        <p class="testimonial-detail">Tour em família • Táxi + tour curto</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ – PERGUNTAS FREQUENTES -->
+<section class="section section-soft">
+  <div class="container">
+    <header class="section-header">
+      <h2>Perguntas frequentes</h2>
+      <p>
+        Algumas respostas rápidas sobre os nossos passeios e o serviço de táxi marítimo
+        a partir de Olhão.
+      </p>
+    </header>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Qual é a diferença entre táxi marítimo e boat tour?</summary>
+        <div class="faq-body">
+          <p>
+            O táxi marítimo é um transporte direto entre Olhão e a ilha que escolhes, com ida e
+            volta à hora combinada, sem paragens extra. Já o boat tour é um passeio organizado,
+            com várias paragens, tempo para praia, fotografias e explicações sobre a Ria Formosa.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como faço a reserva?</summary>
+        <div class="faq-body">
+          <p>
+            Podes contactar-nos por WhatsApp, telefone ou e-mail. Diz-nos a data, período
+            (manhã, tarde ou pôr-do-sol), tipo de passeio (táxi ou tour), número de pessoas
+            e, se já souberes, as ilhas que gostavas de visitar.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>O que acontece se estiver mau tempo?</summary>
+        <div class="faq-body">
+          <p>
+            As condições do mar são sempre avaliadas antes da saída. Se não estiver seguro
+            ou confortável, podemos remarcar ou cancelar o passeio sem problema. A segurança
+            vem sempre em primeiro lugar.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>O que devo levar para o passeio?</summary>
+        <div class="faq-body">
+          <p>
+            Recomendamos protetor solar, chapéu ou boné, óculos de sol, água, toalha e fato
+            de banho. Se gostas de fotografar, traz também o telemóvel ou máquina fotográfica.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>As crianças podem ir nos passeios?</summary>
+        <div class="faq-body">
+          <p>
+            Sim, as crianças são bem-vindas, desde que acompanhadas por um adulto responsável.
+            Temos coletes a bordo e podemos adaptar o ritmo do passeio para ser mais confortável
+            para famílias.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Os horários são fixos ou podem ser ajustados?</summary>
+        <div class="faq-body">
+          <p>
+            Para o táxi marítimo, combinamos contigo a hora de ida e de regresso. Nos boat tours
+            sugerimos horários ideais consoante as marés e o tipo de experiência, mas sempre com
+            alguma flexibilidade sempre que possível.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

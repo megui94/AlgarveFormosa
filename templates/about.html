@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- SOBRE NÓS – BLOCO PRINCIPAL COM FOTO -->
+<section class="section">
+  <div class="container about-hero">
+    <div class="about-text">
+      <h2>Sobre a Algarve Formosa Tour</h2>
+      <p>
+        A Algarve Formosa Tour nasce em Olhão, no coração da Ria Formosa, com uma ideia simples:
+        criar passeios de barco descontraídos, em grupos pequenos, onde cada pessoa sinta que está
+        a passear com amigos e não apenas a “fazer um tour”.
+      </p>
+      <p>
+        Partimos de Olhão para mostrar as ilhas, os canais e as marés com calma, respeito pela
+        natureza e foco em boas memórias. Queremos que saias do barco a pensar que voltavas a fazer
+        o mesmo passeio no dia seguinte.
+      </p>
+
+      <ul class="about-list">
+        <li>Partidas diárias a partir da zona ribeirinha de Olhão</li>
+        <li>Grupos pequenos e ambiente familiar a bordo</li>
+        <li>Rotas ajustadas ao vento, maré e ao que procuras</li>
+      </ul>
+
+      <div class="about-highlights">
+        <div>
+          <strong>Olhão & Ria Formosa</strong>
+          <span>Baseados onde tudo acontece</span>
+        </div>
+        <div>
+          <strong>Ilhas & canais</strong>
+          <span>Armona, Culatra, Farol, Deserta e mais</span>
+        </div>
+        <div>
+          <strong>Experiências tranquilas</strong>
+          <span>Sem pressas, com tempo para aproveitar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-media">
+      <div class="about-main-photo">
+        <img src="{{ url_for('static', filename='imagens/about-ria.jpg') }}"
+             alt="Passeios de barco na Ria Formosa a partir de Olhão">
+      </div>
+
+      <div class="about-secondary-photos">
+        <div class="about-photo-small">
+          <img src="{{ url_for('static', filename='imagens/about-detail-1.jpg') }}"
+               alt="Barco a navegar na Ria Formosa">
+        </div>
+        <div class="about-photo-small about-photo-offset">
+          <img src="{{ url_for('static', filename='imagens/about-detail-2.jpg') }}"
+               alt="Praia de uma das ilhas da Ria">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- CTA: VER TOURS / FALAR NO WHATSAPP -->
+<section class="section">
+  <div class="container cta-strip">
+    <div class="cta-strip-text">
+      <h2>Pronto para conhecer a Ria Formosa?</h2>
+      <p>
+        Escolhe um dos nossos boat tours ou fala connosco para sugerirmos o melhor passeio
+        a partir de Olhão, consoante o que procuras: praia, natureza, pôr-do-sol ou um dia
+        tranquilo em família.
+      </p>
+    </div>
+
+    <div class="cta-strip-actions">
+      <a href="{{ url_for('tours') }}" class="btn btn-ghost">Ver tours disponíveis</a>
+      <a
+        href="https://wa.me/351966115222?text=Ol%C3%A1%2C%20gostava%20de%20saber%20mais%20sobre%20os%20passeios%20na%20Ria%20Formosa."
+        target="_blank"
+        rel="noopener"
+        class="btn btn-secondary"
+      >
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PORQUÊ ESCOLHER-NOS – FAIXA COM 3 MOTIVOS -->
+<section class="section section-soft">
+  <div class="container">
+    <header class="section-header">
+      <h2>Porquê escolher a Algarve Friends Tour em Olhão?</h2>
+      <p>
+        Mais do que mostrar a Ria Formosa, queremos partilhá-la contigo como a vivemos todos os dias:
+        com segurança, calma e aquela sensação de “sou mesmo bem-vindo aqui”.
+      </p>
+    </header>
+
+    <div class="about-reasons">
+      <div class="about-reason">
+        <div class="about-reason-icon">👨‍✈️</div>
+        <h3>Skippers da casa</h3>
+        <p>
+          Navegamos todos os dias na Ria Formosa. Sabemos ler as marés, escolher o melhor percurso
+          e adaptar o passeio ao grupo, ao vento e à hora do dia.
+        </p>
+      </div>
+
+      <div class="about-reason">
+        <div class="about-reason-icon">🛟</div>
+        <h3>Segurança em primeiro lugar</h3>
+        <p>
+          Barcos licenciados, coletes a bordo e atenção constante às condições do mar. Preferimos
+          adiar um passeio a comprometer o conforto e a segurança.
+        </p>
+      </div>
+
+      <div class="about-reason">
+        <div class="about-reason-icon">🏝️</div>
+        <h3>Experiências autênticas</h3>
+        <p>
+          Ilhas mais calmas, aldeias piscatórias, canais escondidos e tempo para parar. Mais do que
+          “ver”, a ideia é sentires mesmo a Ria Formosa.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

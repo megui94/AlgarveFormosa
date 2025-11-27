@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>Algarve Formosa Tour • Ria Formosa a partir de Olhão</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+  <!-- BOTÃO FIXO WHATSAPP -->
+  <a
+    href="https://wa.me/351966115222?text=Ol%C3%A1%2C%20gostava%20de%20saber%20mais%20sobre%20os%20passeios%20na%20Ria%20Formosa."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+  >
+    <span class="whatsapp-icon">💬</span>
+    <span class="whatsapp-text">WhatsApp</span>
+  </a>
+</body>
+</html>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <img src="{{ url_for('static', filename='imagens/logo.png') }}" alt="Algarve Friends Tour" class="brand-logo">
+        <div>
+          <div class="brand-name">Algarve Formosa Tour</div>
+          <div class="brand-tagline">Passeios na Ria Formosa a partir de Olhão</div>
+        </div>
+      </div>
+
+      <!-- Botão mobile -->
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <!-- Menu -->
+      <nav class="nav-links" id="navMenu">
+        <a href="{{ url_for('index') }}"
+           class="nav-link {% if active_page == 'home' %}nav-link-active{% endif %}">
+          Início
+        </a>
+        <a href="{{ url_for('servicos') }}"
+           class="nav-link {% if active_page == 'servicos' %}nav-link-active{% endif %}">
+          Serviços
+        </a>
+        <a href="{{ url_for('tours') }}"
+           class="nav-link {% if active_page == 'tours' %}nav-link-active{% endif %}">
+          Tours
+        </a>
+        <a href="{{ url_for('about') }}"
+           class="nav-link {% if active_page == 'about' %}nav-link-active{% endif %}">
+          Sobre / Porquê nós
+        </a>
+        <a href="{{ url_for('contactos') }}"
+           class="nav-link nav-link-pill {% if active_page == 'contactos' %}nav-link-active{% endif %}">
+          Reservar
+        </a>
+      </nav>      
+    </div>
+  </header>
+
+  <main id="topo">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="ano-footer">2025</span> Algarve Friends Tour. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ano do footer
+    document.getElementById('ano-footer').textContent = new Date().getFullYear();
+
+    // menu mobile
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (navToggle && navMenu) {
+      navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('is-open');
+      });
+    }
+  </script>
+</body>
+</html>

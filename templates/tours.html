@@ -1,0 +1,193 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- TOURS EM DESTAQUE (CARDS) -->
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Tours em destaque</h2>
+      <p>
+        Passeios pela Ria Formosa com partida de Olhão. Todos os tours podem ser ajustados em
+        duração, horário, ritmo da viagem e ilhas a visitar.
+      </p>
+    </header>
+
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Tour Ilhas Clássicas</h3>
+        <p>
+          Passeio que combina Armona, Culatra e Farol, com paragens nas praias, visita às
+          aldeias piscatórias e tempo para fotografias e mergulhos.
+        </p>
+        <ul>
+          <li>Saída e regresso em Olhão</li>
+          <li>Visita a várias ilhas numa só viagem</li>
+          <li>Tempo livre para explorar e aproveitar</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Praias Secretas & Natureza</h3>
+        <p>
+          Um passeio mais calmo e relaxado, explorando zonas menos movimentadas da Ria Formosa.
+          Ideal para quem procura tranquilidade e paisagens naturais.
+        </p>
+        <ul>
+          <li>Paragens em ilhas e praias mais sossegadas</li>
+          <li>Possibilidade de banho em águas calmas</li>
+          <li>Observação da paisagem e da fauna</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Tour privado personalizado</h3>
+        <p>
+          Passeio feito à tua medida: escolhe ilhas, duração e foco do passeio (praia,
+          fotografia, pôr-do-sol, natureza ou apenas relaxar).
+        </p>
+        <ul>
+          <li>Barco só para ti e o teu grupo</li>
+          <li>Flexibilidade total de horários</li>
+          <li>Ideal para momentos especiais</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOTO GRANDE + COMO FUNCIONAM -->
+<section class="section section-soft">
+  <div class="container">
+    <div class="service-detail-grid">
+      <div class="service-detail-media">
+        <!-- FOTO LARGA DO PASSEIO / ILHAS -->
+        <img src="{{ url_for('static', filename='imagens/boat-tour-banner.jpg') }}"
+             alt="Boat tour pela Ria Formosa" />
+      </div>
+
+      <div class="service-detail-text">
+        <span class="service-chip">Boat tours • Informações gerais</span>
+        <h2>Como funcionam os boat tours na Ria Formosa</h2>
+        <p>
+          Os boat tours são passeios de barco organizados, com saída de Olhão, em que o objetivo
+          é aproveitar o caminho, as paragens nas ilhas e o tempo a bordo. Navegamos por canais
+          calmos, fazemos diferentes paragens e deixamos tempo para desfrutar de cada lugar.
+        </p>
+        <p>
+          Em cada tour explicamos de forma simples as ilhas, a Ria Formosa, as marés e alguns
+          pontos de interesse. Sem pressas, sem itinerários “apertados” e sempre com grupos
+          pequenos, para que toda a gente se sinta à vontade.
+        </p>
+
+        <ul>
+          <li>Saídas em horários pensados para boas condições de maré e luz</li>
+          <li>Paragens em ilhas com tempo para praia, fotos e pequenos passeios a pé</li>
+          <li>Skipper local com experiência na Ria Formosa</li>
+          <li>Grupos reduzidos para maior conforto e tranquilidade</li>
+        </ul>
+
+        <p class="service-detail-note">
+          🌊 Cada tour pode ser adaptado ao que procuras: mais praia, mais fotografia, pôr-do-sol
+          romântico ou um passeio descontraído em família.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- INFORMAÇÕES IMPORTANTES (CARDS CURTOS) -->
+<section class="section">
+  <div class="container">
+    <header class="section-header">
+      <h2>Informações importantes antes do passeio</h2>
+      <p>
+        Alguns detalhes que ajudam a tornar a experiência mais confortável e segura para todos.
+      </p>
+    </header>
+
+    <div class="cards-grid">
+      <article class="card">
+        <h3>O que está incluído no tour</h3>
+        <ul>
+          <li>Skipper local com experiência na Ria Formosa</li>
+          <li>Barco confortável preparado para grupos pequenos</li>
+          <li>Paragens em ilhas e praias selecionadas</li>
+          <li>Coletes salva-vidas disponíveis a bordo</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>O que recomendamos levar</h3>
+        <ul>
+          <li>Protetor solar e garrafa de água</li>
+          <li>Toalha e fato de banho</li>
+          <li>Chapéu ou boné e óculos de sol</li>
+          <li>Telemóvel ou máquina fotográfica</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Condições e segurança</h3>
+        <ul>
+          <li>Crianças sempre acompanhadas por um adulto</li>
+          <li>Condições do mar avaliadas antes da saída</li>
+          <li>Possibilidade de alterar ou adiar em caso de mau tempo</li>
+          <li>Briefing rápido de segurança antes de cada passeio</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- GALERIA DE FOTOS -->
+<section class="section section-soft">
+  <div class="container">
+    <header class="section-header">
+      <h2>Momentos dos nossos passeios</h2>
+      <p>
+        Um pouco do que vais encontrar nos boat tours: ilhas, canais, por-do-sol e a
+        Ria Formosa vista a partir de Olhão.
+      </p>
+    </header>
+
+    <div class="photo-gallery">
+      <div class="photo-grid">
+        <figure class="gallery-item">
+          <img src="{{ url_for('static', filename='imagens/tour-1.jpg') }}" alt="Barco na Ria Formosa">
+          <figcaption>Barco a navegar pelos canais da Ria</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="{{ url_for('static', filename='imagens/tour-2.jpg') }}" alt="Praia numa das ilhas">
+          <figcaption>Praias de areia fina nas ilhas</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="{{ url_for('static', filename='imagens/tour-3.jpg') }}" alt="Ilha vista do barco">
+          <figcaption>Chegada a uma das ilhas da Ria</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="{{ url_for('static', filename='imagens/tour-4.jpg') }}" alt="Pôr-do-sol na Ria Formosa">
+          <figcaption>Pôr-do-sol visto a partir do barco</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="{{ url_for('static', filename='imagens/tour-5.jpg') }}" alt="Aldeia piscatória">
+          <figcaption>Aldeias piscatórias e vida local</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="{{ url_for('static', filename='imagens/tour-6.jpg') }}" alt="Grupo a bordo do barco">
+          <figcaption>Grupos pequenos, ambiente descontraído</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
