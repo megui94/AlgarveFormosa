@@ -29,4 +29,5 @@ def contactos():
 
 
 if __name__ == "__main__":
+    # Apenas para correr em local
     app.run(debug=True)
