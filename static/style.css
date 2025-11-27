@@ -603,7 +603,7 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin-bottom: 0.8rem;
+  margin-block-end: 0.8rem;
   background: var(--blue-soft);
   color: var(--blue-dark);
 }
