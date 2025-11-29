@@ -36,7 +36,7 @@
         </div>
       </div>
 
-      <!-- COLUNA DIREITA: DADOS RÁPIDOS -->
+      <!-- COLUNA DIREITA: DADOS RÁPIDOS (SEM PONTO DE PARTIDA / HORÁRIO) -->
       <div>
         <h3>Como falar connosco</h3>
 
@@ -80,32 +80,13 @@
             <span class="contact-icon-circle">📷</span>
             <div>
               <span class="contact-label">Redes sociais</span>
-              <p class="contact-emphasis">@algarveformosatours</p>
+              <p class="contact-emphasis">@algarveformosa</p>
             </div>
           </div>
           <p class="contact-small">
             Instagram / Facebook — partilhamos fotos dos passeios, bastidores e novidades.
           </p>
         </div>
-
-        <h3>Ponto de partida</h3>
-        <p class="contact-small">
-          Zona ribeirinha de Olhão, junto ao cais de embarque para as ilhas da Ria Formosa.
-          O ponto exato é enviado na confirmação da reserva.
-        </p>
-
-        <div class="contact-map">
-          <span>🗺️ Mapa do ponto de encontro — podes colocar aqui um mapa ou print do Google Maps.</span>
-        </div>
-
-        <h3>Horário habitual</h3>
-        <p class="contact-small">
-          Respondemos mais rapidamente entre as <strong>09h00 e as 20h00</strong>
-          (hora de Portugal). Fora desse horário podes deixar mensagem — respondemos logo que possível.
-        </p>
-        <p class="contact-small">
-          Línguas: Português • Inglês (e Espanhol básico).
-        </p>
       </div>
 
     </div>
@@ -168,7 +149,6 @@
   </div>
 </section>
 
-<!-- BARCOS & SEGURANÇA -->
 <!-- BARCOS & SEGURANÇA -->
 <section class="section section-soft">
   <div class="container">
@@ -254,26 +234,24 @@
         💡 Se vieres de carro, há zonas de estacionamento perto da zona ribeirinha. Em época alta,
         vem com algum tempo de antecedência.
       </p>
+
+      <!-- Horário habitual passou para aqui -->
+      <h3>Horário habitual</h3>
+      <p class="contact-small">
+        Respondemos mais rapidamente entre as <strong>09h00 e as 20h00</strong> (hora de Portugal).
+        Fora desse horário podes deixar mensagem — respondemos logo que possível.
+      </p>
+      <p class="contact-small">
+        Línguas: Português • Inglês (e Espanhol básico).
+      </p>
     </div>
 
     <div class="meeting-map">
       <div class="meeting-map-embed">
-        <!-- OPÇÃO 1: FOTO
-             Coloca aqui uma foto do cais ou ponto de encontro -->
         <img
           src="{{ url_for('static', filename='imagens/ponto-encontro.jpg') }}"
           alt="Ponto de encontro dos tours na zona ribeirinha de Olhão"
         >
-
-        <!-- OPÇÃO 2: GOOGLE MAPS
-        Em vez da imagem acima, podes usar um iframe do Google Maps, por exemplo:
-        <iframe
-          src="AQUI_O_CÓDIGO_DO_GOOGLE_MAPS"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-        -->
       </div>
 
       <p class="meeting-map-caption">

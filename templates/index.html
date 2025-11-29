@@ -90,30 +90,46 @@
   </section>
 
   <!-- SERVIÇO EM DESTAQUE -->
-  <section id="servico-destaque" class="section section-feature">
-    <div class="container feature-card">
-      <div class="feature-image"></div>
+<section class="section section-feature">
+  <div class="container">
+
+    <div class="feature-header">
+      <span class="feature-chip">Passeio em destaque</span>
+      <h2>Passeio às ilhas da Ria Formosa</h2>
+      <p>Tour ideal para conhecer Armona, Culatra, Farol e Deserta com tempo para parar, passear e aproveitar o mar transparente.</p>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-media">
+        <img
+          src="{{ url_for('static', filename='imagens/ria-formosa-ilhas.jpg') }}"
+          alt="Vista das ilhas da Ria Formosa a partir de Olhão"
+        >
+        <span class="feature-media-tag">Ilha do Farol</span>
+      </div>
 
       <div class="feature-text">
-        <h2>Passeio às ilhas da Ria Formosa</h2>
+        <h3>Como é este passeio?</h3>
         <p>
-          Embarca em Olhão e descobre as ilhas da Ria Formosa: Armona, Culatra, Farol
-          e Deserta. Um passeio calmo pelos canais da ria, com tempo para caminhar
-          nas praias e aproveitar o mar transparente.
+          Embarca em Olhão e segue pelos canais da Ria Formosa até ilhas como Armona, Culatra, Farol e Deserta.
+          Passeio calmo, com paragens para caminhar na areia, tirar fotografias e, se quiseres, dar um mergulho.
         </p>
 
         <ul>
-          <li>✨ Saídas em horários pensados para aproveitar a maré e o sol</li>
-          <li>🏝️ Paragens em ilhas escolhidas em conjunto contigo</li>
-          <li>🌊 Possibilidade de banho e tempo livre na praia</li>
+          <li>✨ Horários pensados para aproveitar a maré e o sol</li>
+          <li>🏝️ Paragens em ilhas escolhidas contigo antes do passeio</li>
+          <li>🌊 Tempo livre para banho e passeios na praia</li>
         </ul>
 
-        <a href="{{ url_for('servicos') }}" class="feature-link">
-          Ver opções deste passeio e reservar →
-        </a>
+        <div class="feature-cta">
+          <a href="{{ url_for('tours') }}" class="btn btn-primary">Ver tours disponíveis</a>
+          <a href="{{ url_for('contactos') }}" class="btn btn-ghost">Falar connosco</a>
+        </div>
       </div>
     </div>
-  </section>
+
+  </div>
+</section>
 
   <!-- TESTEMUNHOS / COMENTÁRIOS DOS CLIENTES -->
 <section class="section">
